@@ -7,7 +7,19 @@
     <script src = "script.js"></script>
   </head>
   <body>
-      
+
+        <div class = "container navbar">
+        <header>
+            <center>
+            <nav>
+                <a href = "#about">About</a>
+                <a href = "#skills">Skills</a>
+                <a href = "#work">Work</a>
+            </nav>
+            </center>
+        </header>
+    </div>
+
     <div id="content">
         <center>
         <h1>Kanupriya's Portfolio</h1>
@@ -16,6 +28,47 @@
         <button onclick = "addRandomFact()">PRESS</button>
         <div id = "fact-container"></div>
         </center>
+    </div>
+    
+    <div class = "container about" id = "about">
+        <h1>About</h1>
+        <div class = "about-info">
+            <p>Hi! I am a BTech undergrad at IIIT Delhi pursuing Computer Science and Design Engineering.</p>
+            <p>I recently completed my internship at MathWorks where I worked in the Simulink UI Team.</p>
+            <p>I enjoy Data Structures and Algorithms, Database Management and Human-Computer Interaction.</p>
+            <p>My hobbies include Karate, swimming, illustration and animation.</p>
+        </div>
+    </div>
+
+    <div class = "container skills" id = "skills">
+        <h1>Skills</h1>
+        <div class = "skills-info">
+            <p>Expertise Area</p>
+            <ul>
+                <li>Data Structures and Algorithms</li>
+                <li>Database Management</li>
+                <li>Human Computer Interaction</li>
+                <li>Designing Interactive Systems</li>
+            </ul>
+            <p>Programming Languages</p>
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C++</li>
+                <li>MATLAB</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class = "container work" id = "work">
+        <h1>Work</h1>
+        <div class = "work-info">
+            <ol>
+                <li>MathWorks</li>
+                <li>CRIS</li>
+                <li>CodeChef</li>
+            </ol>
+        </div>
     </div>
 
   </body>
