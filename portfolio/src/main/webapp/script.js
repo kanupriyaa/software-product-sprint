@@ -16,8 +16,7 @@
  * Adds a random greeting to the page.
  */
 function addRandomFact() {
-  const facts =
-      ['Black belt in Karate', 'Loves binging TV shows', 'Big B99 fan', 'Has a dog called Oreo', 'Lived in Norway'];
+  const facts = ['Black belt in Karate', 'Can speak German, French and Norwegian', 'Loves binging TV shows', 'Big Brooklyn 99 fan', 'Has a dog called Oreo', 'Lived in Norway'];
 
   // Pick a random fact.
   const fact = facts[Math.floor(Math.random() * facts.length)];

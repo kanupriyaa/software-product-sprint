@@ -1,35 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
+    <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Kanupriya's Portfolio</title>
     <link rel = "stylesheet" href = "style.css">
     <script src = "script.js"></script>
-  </head>
-  <body>
-
-        <div class = "container navbar">
+    </head>
+    <body>
+      
+    <div class = "container navbar">
         <header>
-            <center>
+            <div class = "lgo">
+                <h1>Kanupriya Singh</h1>
+            </div>
             <nav>
-                <a href = "#about">About</a>
-                <a href = "#skills">Skills</a>
-                <a href = "#work">Work</a>
+                <ul>
+                    <li><a href = "#about">About</a></li>
+                    <li><a href = "#skills">Skills</a></li>
+                    <li><a href = "#work">Work</a></li>
             </nav>
-            </center>
         </header>
     </div>
 
-    <div id="content">
-        <center>
-        <h1>Kanupriya's Portfolio</h1>
-        <img src = "images/Formal Photo.jpg" alt = "Profile Pic" width = "150" height = "200">
-        <p>Click here to get a random fact about me!</p>
-        <button onclick = "addRandomFact()">PRESS</button>
-        <div id = "fact-container"></div>
-        </center>
-    </div>
-    
+    <div class = "container main-info-section">
+        <div class = "text">
+            <h1>
+                <span>H</span>
+                <span class = "m-left">i</span>
+                <span class = "m-left">,</span>
+                <br>
+                <span>I</span>
+                <span class = "m-left">'</span>
+                <span class = "m-left">m</span>
+                <span class = "name">K</span>
+                <span class = "m-left name">a</span>
+                <span class = "m-left name">n</span>
+                <span class = "m-left name">u</span>
+                <span class = "m-left name">p</span>
+                <span class = "m-left name">r</span>
+                <span class = "m-left name">i</span>
+                <span class = "m-left name">y</span>
+                <span class = "m-left name">a</span>
+            </h1>
+            <p>Computer Science and Design Engineer</p>
+            <a href = "#contact">Contact Me</a> 
+        </div>
+        <div class = "profile-image">
+            <img src = "images/Formal Photo.png" alt = "Profile Pic">
+        </div>
+    </div>          
+
+    <ul class="social-icons">
+        <li><a href="https://www.facebook.com/kanupriya.singhh"><img src='images/facebook.png'/></a></li>
+        <li><a href="https://www.instagram.com/kanupriyasinghh/"><img src='images/instagram.png'/></a></li>
+        <li><a href="https://www.linkedin.com/in/kanupriya-singh/"><img src='images/linkedin.png'/></a></li>
+        <li><a href="https://github.com/kanupriyaa"><img src='images/logo.png'/></a></li>
+    </ul>
+
     <div class = "container about" id = "about">
         <h1>About</h1>
         <div class = "about-info">
@@ -37,39 +64,77 @@
             <p>I recently completed my internship at MathWorks where I worked in the Simulink UI Team.</p>
             <p>I enjoy Data Structures and Algorithms, Database Management and Human-Computer Interaction.</p>
             <p>My hobbies include Karate, swimming, illustration and animation.</p>
+            <br>
+            <button onclick = "addRandomFact()">Click here to get a random fact about me!</button>
+            <div id = "fact-container"></div>
+            </div>
         </div>
     </div>
 
     <div class = "container skills" id = "skills">
         <h1>Skills</h1>
-        <div class = "skills-info">
-            <p>Expertise Area</p>
-            <ul>
-                <li>Data Structures and Algorithms</li>
-                <li>Database Management</li>
-                <li>Human Computer Interaction</li>
-                <li>Designing Interactive Systems</li>
-            </ul>
-            <p>Programming Languages</p>
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>C++</li>
-                <li>MATLAB</li>
-            </ul>
+        <div class = "html">
+            <div class = "tag-DSA">
+                <p>DSA</p>
+            </div>
+            <div class = "progressbar">
+                <div class = "bar-DSA"></div>
+            </div>
+        </div>
+        <div class = "html">
+            <div class = "tag-dbms">
+                <p>DBMS</p>
+            </div>
+            <div class = "progressbar">
+                <div class = "bar-dbms"></div>
+            </div>
+        </div>
+        <div class = "html">
+            <div class = "tag-hci">
+                <p>HCI</p>
+            </div>
+            <div class = "progressbar">
+                <div class = "bar-hci"></div>
+            </div>
+        </div>
+        <div class = "html">
+            <div class = "tag-dis">
+                <p>UI/UX</p>
+            </div>
+            <div class = "progressbar">
+                <div class = "bar-dis"></div>
+            </div>
         </div>
     </div>
 
     <div class = "container work" id = "work">
         <h1>Work</h1>
         <div class = "work-info">
-            <ol>
-                <li>MathWorks</li>
-                <li>CRIS</li>
-                <li>CodeChef</li>
-            </ol>
+            <p>
+            <img src='images/Matlab_Logo.png'/><br>       
+            <b>MathWorks:</b> Created a search index generator for a set of Simulink Data Model instances using metamodel reflection<br>
+            <img src='images/CRIS.png'/><br>
+            <b>CRIS:</b> Co-developed the CM2S2 App for CMM department using Android Studio<br>
+            <img src='images/codechef.png'/><br>
+            <b>CodeChef:</b> Created, formulated and modified lesson plans on logical reasoning, problem solving and python programming and executed them
+            </p>
         </div>
     </div>
 
-  </body>
+    <div class = "container contact" id = "contact">
+        <h1>Contact</h1>
+        <form>
+            <input type = "text" name = "name" placeholder = "Full Name">
+            <input type = "email" placeholder = "Email">
+            <textarea name = "message" cols = "30" rows = "10" placeholder = "Message"></textarea>
+            <input type = "submit">
+        </form>
+    </div>
+
+    <footer>
+        <hr>
+        <p>2020 Copyright. All Rights Reserved.</p>
+    </footer>
+
+    </body>
 </html>
