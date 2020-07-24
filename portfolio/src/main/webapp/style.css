@@ -5,6 +5,28 @@
     font-family: 'PT Sans', sans-serif;
 }
 
+button {
+    padding: 5px 6px;
+    background-color: lightgoldenrodyellow;
+    border: 3px solid #ED5565;
+    color: #ED5565;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    position: 40px;
+    top: 80px;
+    overflow: hidden;
+    transition: .5s;
+    display: inline-block;
+}
+
+div#fact-container {
+    box-sizing: content-box;
+    padding-top: 20px;
+    background-color: none;
+    color: black;
+    justify-content: center;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -21,7 +43,7 @@ nav ul,
 }
 
 body {
-    background-color: #252627;
+    background-color: lightgoldenrodyellow;
 }
 
 header {
@@ -32,17 +54,20 @@ header {
 }
 
 .navbar {
-    background-color: #181818;
+    background-color: #252627;
 }
 
 header h1,
-header a,
-.text p,
+header a {
+    color: white;
+}
+
 .about h1,
 .skills h1,
 .work h1,
-.contact h1 {
-    color: white;
+.contact h1
+.text p {
+    color: black;
 }
 
 li {
@@ -52,16 +77,16 @@ li {
 
 a {
     text-decoration: none;
-    font-size: .9rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
     position: relative;
     top: 50%;
-    bottom: 50%;
+    bottom: 30%;
     transform: translateY(-50%);
 }
 
 .main-info-section {
-    height: calc(100vh - 81.6px);
+    height: calc(75vh - 81.6px);
 }
 
 .text {
@@ -69,7 +94,7 @@ a {
 }
 
 .text h1 {
-    color: white;
+    color: 181818;
     font-size: 3rem;
     cursor: context-menu;
 }
@@ -94,7 +119,7 @@ span.m-left {
 .text p {
     letter-spacing: 3px;
     word-spacing: 10px;
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 .text a {
@@ -112,7 +137,7 @@ span.m-left {
 }
 
 .text a:hover {
-    color: white;
+    color: 181818;
 }
 
 .text a::before {
@@ -131,14 +156,13 @@ span.m-left {
     height: 100%;
 }
 
-.profile-image img {
-    width: 450px;
-    margin-top: 50px;
+.about {
+    height: 90vh;
+    margin-top: 100px;
 }
 
-.about {
-    height: 100vh;
-    margin-top: 100px;
+.work {
+    height: 90vh;
 }
 
 .about h1,
@@ -148,11 +172,31 @@ span.m-left {
     opacity: 0.7;
 }
 
+.social-icons {
+    padding-left: 70px;
+} 
+
+.social-icons li {
+    display: inline-block;
+    list-style-type: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.social-icons li a {
+    border-bottom: none;
+}
+
+.social-icons li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
 .about-me-info {
     max-width: 900px;
-    background-color: #252627;
-    box-shadow: 0 0 1.2rem rgba(0,0,0,0.25);
-    padding: 50px;
+    background-color: black;
+    padding: 30px;
     position: relative;
     top: -70px;
     left: 50%;
@@ -163,25 +207,16 @@ span.m-left {
 
 .about-me-info p {
     font-size: 1.3rem;
-    color: white;
+    color: 181818;
 }
 
 .about-me-info p:nth-child(2),
-.about-me-info p:last-child{
+.about-me-info p:last-child {
     margin-top: 30px;
 }
 
-.about img {
-    width: 300px;
-    position: relative;
-    top: -300px;
-    left: calc(100% - 100px);
-    right: calc(100% - 100px);
-    transform: translateX(calc(-100% + 100px ));
-}
-
 .skills {
-    height: 100vh;
+    height: 90vh;
 }
 
 .skills h1,
@@ -294,4 +329,15 @@ footer p {
     color: #707070;
     font-size: 1.2rem;
     padding: 30px 0;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.profile-image img {
+    width: 350px;
+    height: 350px;
+    margin-top: 50px;
 }

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <head>
+    <head>
     <meta charset="UTF-8">
     <title>Kanupriya's Portfolio</title>
     <link rel = "stylesheet" href = "style.css">
     <script src = "script.js"></script>
-  </head>
-  <body>
+    </head>
+    <body>
       
     <div class = "container navbar">
         <header>
@@ -46,9 +46,16 @@
             <a href = "#contact">Contact Me</a> 
         </div>
         <div class = "profile-image">
-            <img src = "images/Formal Photo.jpg" alt = "Profile Pic">
+            <img src = "images/Formal Photo.png" alt = "Profile Pic">
         </div>
     </div>          
+
+    <ul class="social-icons">
+        <li><a href="https://www.facebook.com/kanupriya.singhh"><img src='images/facebook.png'/></a></li>
+        <li><a href="https://www.instagram.com/kanupriyasinghh/"><img src='images/instagram.png'/></a></li>
+        <li><a href="https://www.linkedin.com/in/kanupriya-singh/"><img src='images/linkedin.png'/></a></li>
+        <li><a href="https://github.com/kanupriyaa"><img src='images/logo.png'/></a></li>
+    </ul>
 
     <div class = "container about" id = "about">
         <h1>About</h1>
@@ -58,10 +65,7 @@
             <p>I enjoy Data Structures and Algorithms, Database Management and Human-Computer Interaction.</p>
             <p>My hobbies include Karate, swimming, illustration and animation.</p>
             <br>
-            <p>Click here to get a random fact about me!</p>
-            <br>
-            <button onclick = "addRandomFact()">PRESS</button>
-            <br>
+            <button onclick = "addRandomFact()">Click here to get a random fact about me!</button>
             <div id = "fact-container"></div>
             </div>
         </div>
@@ -105,13 +109,15 @@
 
     <div class = "container work" id = "work">
         <h1>Work</h1>
-        <p>Previously interned at:</p>
         <div class = "work-info">
-            <ol>
-                <li>1. MathWorks: Created a search index generator for a set of Simulink Data Model instances using metamodel reflection</li>
-                <li>2. CRIS: Co-developed the CM2S2 App for CMM department using Android Studio</li>
-                <li>3. CodeChef: Created, formulated and modified lesson plans on logical reasoning, problem solving and python programming and executed them.</li>
-            </ol>
+            <p>
+            <img src='images/Matlab_Logo.png'/><br>       
+            <b>MathWorks:</b> Created a search index generator for a set of Simulink Data Model instances using metamodel reflection<br>
+            <img src='images/CRIS.png'/><br>
+            <b>CRIS:</b> Co-developed the CM2S2 App for CMM department using Android Studio<br>
+            <img src='images/codechef.png'/><br>
+            <b>CodeChef:</b> Created, formulated and modified lesson plans on logical reasoning, problem solving and python programming and executed them
+            </p>
         </div>
     </div>
 
@@ -130,5 +136,5 @@
         <p>2020 Copyright. All Rights Reserved.</p>
     </footer>
 
-  </body>
+    </body>
 </html>
